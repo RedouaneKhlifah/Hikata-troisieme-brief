@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #060e10;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+}
+.navbar {
+  display: flex;
+}
+
+.navbarpanier {
+  width: 400;
+  height: 520px;
+  position: absolute;
+  border-radius: 40px;
+  top: 50px;
+  right: 6px;
+  background-color: #fffbfb;
+  color: #f43a3a;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+
+  z-index: 100;
+}
+
+.navbarpanier li a {
+  color: #060e10;
+}
+.navbar a {
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: ease 0.4s;
+  color: white;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url(backHikata.png);
+  z-index: 100;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.home-text {
+  padding-left: 70px;
+}
+.home-text p {
+  color: white;
+  padding-top: 15px;
+  font-size: 18px;
+}
+.home-text h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 15px;
+}
+
+.home-btn {
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 30px;
+  background: #f65617;
+  color: white;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+.home-btn:hover {
+  background: white;
+  color: #f65617;
+}
+.about {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  grid-template-columns: 1fr 0.7fr;
+}
+.about .right {
+  width: 80%;
+  height: 45vh;
+  background: url(aboutsushi.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.about-text {
+  padding-left: 70px;
+  padding-top: 0px;
+}
+.about-text p {
+  color: rgb(0, 0, 0);
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.about-text h1 {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  padding-top: 15px;
+}
+
+.about-btn {
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 30px;
+  background: #f65617;
+  color: white;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+.about-btn:hover {
+  background: rgb(0, 0, 0);
+  color: #f65617;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 1rem;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+.news-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.news-text p {
+  font-size: 1rem;
+  color: black;
+  line-height: 30px;
+}
+.newsletter form {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.newsletter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 150px 20px 30px;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+.newsletter form input:last-child {
+  display: inline-block;
+  position: absolute;
+  outline: none;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 15px;
+  background: #f65617;
+  color: var(--bg-color);
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.social-media {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.footer-logo {
+  color: white;
+  font-family: Rigot;
+  font-size: 67px;
+  color: #ff7f7f;
+}
+.footer-logo i {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 90px;
+}
+.footer .ico-fa {
+  font-size: 20px;
+  color: white;
+
+  display: block;
+  margin-top: 15px;
+}
+.footer .ico-fa {
+  font-size: 15px;
+  color: white;
+  margin-left: 40px;
+  display: inline-block;
+}
+.copyright .ico-fa {
+  margin-left: 0px;
+}
+.copyright {
+  color: white;
+  font-size: 16px;
+  margin-left: 70px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bi-x-circle,
+.bi-list {
+  display: none;
+}
+.bi-cart4 {
+}
+/* contact us*/
+@media (max-width: 390px) {
+  .about .right {
+    display: none;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .navbar li {
+    display: none;
+  }
+  .newsletter {
+    flex-wrap: wrap;
+  }
+  .about-text {
+    padding-left: 0px;
+
+    text-align: center;
+  }
+  .home-text {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .clo-ico {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .resp-ico {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    display: block;
+  }
+  .navbarpanier {
+    display: block;
+  }
+  .newsletter {
+    padding-top: 90px;
+  }
+  .newsletter form {
+    width: 300px;
+  }
+  .newsletter form input::placeholder {
+    font-size: 16px;
+  }
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  font-size: 100px;
+  margin-top: 80px;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.mob-options {
+  margin-top: 40px;
+  text-align: center;
+}
+.mobile-nav ul li {
+  margin-bottom: 30px;
+}
+.mobile-nav a {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.shownav {
+  display: flex;
+}
